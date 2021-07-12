@@ -1,0 +1,272 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #b2bec3;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.hover-collection {
+  width: 90%;
+  align-content: center;
+  margin: 20px auto 20px auto;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+.hover-collection h1 {
+  margin: 20px;
+}
+.hover-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% auto 9% auto;
+}
+
+.hover-col {
+  width: 30%;
+  text-align: center;
+}
+
+.foot-p {
+  background-color: whitesmoke;
+  width: 300px;
+  padding: 10px 13px;
+  margin: auto;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .hover-collection {
+    width: 300px;
+  }
+
+  .hover-row {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .hover-col {
+    width: 50%;
+    margin: 15% 0px;
+  }
+}
+
+/*------Hovers 1------*/
+
+.hover1 {
+  background-color: #487eb0;
+  border-radius: 15px;
+  transition: 0.5s ease;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.hover1:hover {
+  background-color: #192a56;
+  color: #fff;
+}
+
+/*------Hovers 2------*/
+
+.hover2 {
+  border: 5px solid #192a56;
+  transition: 0.4s ease;
+  padding: 15px 20px;
+  font-weight: 700;
+  color: #192a56;
+  box-shadow: inset 0 0 0 0 #eb3b5a;
+  cursor: pointer;
+}
+
+.hover2:hover {
+  box-shadow: inset 0 0 50px 100px #eb3b5a;
+  color: #fff;
+}
+/*------Hovers 3------*/
+
+.hover3 {
+  border: 5px solid #eb2f06;
+  border-radius: 50px;
+  transition: 0.4s ease;
+  padding: 15px 20px;
+  color: #eb2f06;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hover3:hover {
+  color: #fff;
+}
+.hover3:before {
+  transition: 0.4s ease;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 0%;
+  right: 0%;
+  opacity: 0;
+  content: "";
+  background-color: #eb2f06;
+}
+
+.hover3:hover::before {
+  top: 0%;
+  bottom: 0%;
+  opacity: 1;
+  z-index: -1;
+}
+
+/*------Hovers 4------*/
+
+.hover4 {
+  background-color: #00b894;
+  padding: 10px 15px;
+  color: #3b3b98;
+  transition: 0.6s ease;
+  box-shadow: inset 0 0 0 0 #3b3b98;
+  cursor: pointer;
+}
+.hover4:hover {
+  box-shadow: inset 0 150px 0 0 #3b3b98;
+  color: #00b894;
+}
+
+/*------Hovers 5------*/
+
+.hover5 {
+  background-color: #e84393;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 15px;
+  transition: 0.5s ease;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hover5:before {
+  position: absolute;
+  content: "";
+  top: -14%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  height: 50px;
+  border: 5px solid #fd79a8;
+  transform: scale(0.5);
+  z-index: -1;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.hover5:hover {
+  background-color: #fd79a8;
+}
+.hover5:hover::before {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/*------Hovers 6------*/
+
+.hover6 {
+  padding: 10px 15px;
+  background-image: linear-gradient(50deg, #f9ca24, #22a6b3);
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.hover6:hover {
+  background-image: linear-gradient(50deg, #f0932b, #be2edd);
+  border-radius: 0px;
+}
+
+/*------Hovers 7------*/
+
+.hover-col7 {
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  padding: 5px 10px;
+  background-color: #ea2027;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hover-col7:hover {
+  animation: shake 0.6s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-1deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+/*------Hovers 8------*/
+
+.hover-col8 {
+  width: 120px;
+  text-align: center;
+  margin: auto;
+  background-color: #006266;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.hover-col8:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*------Hovers 9------*/
+
+.hover-col9 {
+  width: 120px;
+  margin: auto;
+  color: #ff0000;
+  border: 3px solid #ff0000;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-weight: 600;
+}
+
+.hover-col9:hover {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  box-shadow: 0 0 30px 10px rgba(255, 0, 0, 0.5);
+}
